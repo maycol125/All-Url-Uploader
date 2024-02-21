@@ -3,6 +3,9 @@ import logging
 from pyrogram.raw.all import layer
 from pyrogram import Client, idle, __version__
 
+from keep_alive import keep_alive
+keep_alive()
+
 from config import Config
 
 logging.basicConfig(
